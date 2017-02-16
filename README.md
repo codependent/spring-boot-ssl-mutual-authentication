@@ -4,7 +4,7 @@ Spring Boot Secure Server and Client that requires mutual authentication
 The embedded certificates were generated this way:
 
  - **Server Keystore:**
-`keytool -genkeypair -alias secure-server -keyalg RSA -dname "CN=codependent,OU=myorg,O=myorg,L=mycity,S=mystate,C=es" -keypass secret -keystore keystore.jks -storepass secret`
+`keytool -genkeypair -alias secure-server -keyalg RSA -dname "CN=codependent,OU=myorg,O=myorg,L=mycity,S=mystate,C=es" -keypass secret -keystore server-keystore.jks -storepass secret`
 
  - **Client Keystore:** 
 `keytool -genkeypair -alias secure-client -keyalg RSA -dname "CN=codependent-client,OU=myorg,O=myorg,L=mycity,S=mystate,C=es" -keypass secret -keystore client-keystore.jks -storepass secret`
