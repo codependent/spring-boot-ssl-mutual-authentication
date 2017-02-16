@@ -18,3 +18,5 @@ The embedded certificates were generated this way:
   - Then we **import it in the client truststore**: `keytool -importcert -keystore client-truststore.jks -alias servercert -file server-public.cer -storepass secret` 
 
 To check the proyect start both Spring Boot applications and access secure-client -> `http://localhost:8080`. It will call `https://localhost:8443` and if everything goes OK you'll see *"Hello!"*
+
+if you want to access `https://localhost:8443` from the browser you'll have to install the certificate in it. To export it: `keytool -importkeystore -srckeystore client-keystore.jks -destkeystore codependent-client.p12 -deststoretype PKCS12`
