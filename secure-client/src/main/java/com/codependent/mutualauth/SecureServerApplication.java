@@ -16,14 +16,14 @@ public class SecureServerApplication {
 		System.setProperty("javax.net.ssl.keyStorePassword", "secret");
 		System.setProperty("javax.net.ssl.trustStore", Thread.currentThread().getContextClassLoader().getResource("client-truststore.jks").getPath());
 		System.setProperty("javax.net.ssl.trustStorePassword", "secret");
-		
+		/*
 		javax.net.ssl.HttpsURLConnection.setDefaultHostnameVerifier(
 			(hostname,sslSession) -> {
 				if (hostname.equals("localhost")) {
 					return true;
 				}
 				return false;
-			});
+			});*/
 	}
 	
 	@Bean
