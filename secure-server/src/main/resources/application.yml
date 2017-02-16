@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: secure-server
+    
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:server-keystore.jks
+    key-store-password: secret
+    key-alias: secure-server
+    trust-store: classpath:server-truststore.jks
+    trust-store-password: secret
+    enabled: true
+    client-auth: need
+    
+logging:
+  level:
+    org.springframework.security: DEBUG
