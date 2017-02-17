@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: secure-client2
+    
+server:
+  port: 8282
+    
+logging:
+  level:
+    org.springframework.security: DEBUG

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class SecureServerApplication {
+public class SecureClient2Application {
 
 	@PostConstruct
 	public void initSsl(){
@@ -33,6 +33,6 @@ public class SecureServerApplication {
 	}
 	
 	public static void main(String[] args) {
-		SpringApplication.run(SecureServerApplication.class, args);
+		SpringApplication.run(SecureClient2Application.class, args);
 	}
 }
