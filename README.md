@@ -1,11 +1,11 @@
 # spring-boot-ssl-mutual-authentication
-Spring Boot Secure Server and Client that requires mutual authentication
+Spring Boot Secure Server and Clients that requires mutual authentication
 
 There are three projects in this repo:
 
- - secure-server: available from https://localhost:8443
- - secure-client: available from http://localhost:8080
- - secure-client2: available from http://localhost:8282
+ - secure-server: available at `https://localhost:8443`
+ - secure-client: available at `http://localhost:8080`
+ - secure-client2: available at `http://localhost:8282`
 
 ## Testing with self signed certificates:
 
